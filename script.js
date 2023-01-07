@@ -12,7 +12,7 @@ const form = document.getElementById("locationInput");
 const search = document.querySelector(".search");
 const btn = document.querySelector(".submit");
 const cities = document.querySelectorAll("ul li.city");
-
+console.log(cities);
 // Default city when the page loads.
 let cityInput = "London";
 
@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
       cityInput = search.value;
       fetchWeatherData();
       search.value = "";
-      app.style.oppacity = "0";
+      app.style.opacity = "0";
    }
 
    e.preventDefault();
