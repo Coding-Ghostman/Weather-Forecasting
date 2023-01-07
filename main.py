@@ -9,14 +9,6 @@ import pymongo
 import pandas as pd
 import os
 
-# url = "https://my.meteoblue.com/packages/basic-day?apikey=kvNdbal3sQ5eyKOX&lat=13.55&lon=-88.8167&asl=481&format=json"
-
-# location = "Bengaluru"
-# url = "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=6052652525c04c6b88b74541222512&q={}&format=json&date={}&enddate={}&includelocation=yes&tp=24".format(location, start_date, end_date)
-
-
-# response = requests.request("GET", url, headers=headers, data=payload)
-
 def data_into_mongo(location, client):
     days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     start_date = "2010-01-01"
